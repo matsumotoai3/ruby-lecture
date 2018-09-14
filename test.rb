@@ -1,10 +1,2 @@
-def test
-    a = 'a'
-    b = 'b'
-    c = []
-    c << "#{a}"
-    c << "#{b}"
-    c
-end
-
-puts test
+a = '123-456'
+puts a.split('-')
