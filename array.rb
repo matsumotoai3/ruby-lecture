@@ -1,15 +1,20 @@
 a = []
-num = 0
+num = 1
 while true do
-    print '入力：　'
+    print "入力#{num}：　"
     b = gets.chomp
     if b == 'end'
         break
     end
-    a[num] = b
+    a[num - 1] = b
     num += 1
 end
 
-for c in a
-    puts c
+e = {}
+for c in a 
+    print c + '：　'
+    e[ :"#{c}" ] = gets.chomp
+    #puts e[ :"#{c}" ] * 2
 end
+
+puts e
